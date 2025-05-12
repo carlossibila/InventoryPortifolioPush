@@ -1,13 +1,11 @@
 <body>
-<h1></h1>
-<h2></h2>
-<h3></h3>
-<p></p>
-<img src="ProjectImages\ReadmeFirstImage.PNG" alt="image" width="200" >
+
+
+<img src="ProjectImages\ReadmeFirstImage.PNG" alt="image" width="800" >
 
 
 <h1>### Projeto Inventario ###</h1>
-<h3>Esse projeto é parte de um estudo seguindo o curso 'Unreal Engine 5 UI Design: Advance inventory system with UE5', do instrutor Unreal Magic, na Udemy.</h3>
+<h3>Esse projeto é parte de um estudo seguindo o curso 'Unreal Engine 5 UI Design: Advance inventory system with UE5', do instrutor Mr. Navid, Unreal Magic, na Udemy.</h3>
 <p>Tanto o curso quanto meu projeto sao inspirados em Legends Of Zelda, eu experimentei trazer assets diferentes, porém a similaridade é evidente.</p>
 
 <p>Esse projeto nao receberá mais atualizações, a finalidade dele é ser uma apresentação do meu conhecimento em manipular arrays e lidar com interface, BlueprintComponents, UserInterface, incluindo drag and drop além de um menu de ação para itens em abas diferentes do inventario.</p>
@@ -61,5 +59,8 @@
 <p>O botão Drop faz conferencias diferentes para o tipo do item selecionado, usado para desequipar itens ao drop</p>
 <img src="ProjectImages\ActionMenuDrop.PNG" alt="ActionMenuDrop" width="200" >
 
+<h1>### Conclusão ###</h1>
+<h3>Um outro projeto usando a estrutura aprendida e documentada aqui esta em andamento, por isso em algumas imagens pode ser visto a logica ja sendo aplicada, introduzindo uma mecanica de quest</h3>
+<p>Agradeço muito ao instrutor do curso Mr. Navid, muito paciente e didatico em seus ensinamentos.</p>
 
 </body>
