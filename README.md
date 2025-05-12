@@ -1,7 +1,7 @@
 <body>
 
 
-<img src="ProjectImages\ReadmeFirstImage.PNG" alt="image" width="800" >
+<img src="ProjectImages\ReadmeFirstImage.PNG" alt="InventoryViewport" width="800" >
 
 
 <h1>### Projeto Inventario ###</h1>
