@@ -63,4 +63,75 @@
 <h3>Um outro projeto usando a estrutura aprendida e documentada aqui esta em andamento, por isso em algumas imagens pode ser visto a logica ja sendo aplicada, introduzindo uma mecanica de quest.</h3>
 <p>Agradeço muito ao instrutor do curso Mr. Navid, muito paciente e didatico em seus ensinamentos.</p>
 
+
+<h1>_____________________________________________________________</h1>
+
+
+
+
+
+<img src="ProjectImages\ReadmeFirstImage.PNG" alt="InventoryViewport" width="800" >
+
+
+<h1>### Inventory Project ###</h1>
+<h3>This project is part of a study following the course 'Unreal Engine 5 UI Design: Advanced inventory system with UE5', by instructor Mr. Navid, Unreal Magic, on Udemy.</h3>
+<p>Both the course and my project are inspired by Legends of Zelda, I tried to bring different assets, but the similarity is evident.</p>
+
+<p>This project will no longer receive updates, its purpose is to showcase my knowledge in handling Arrays and dealing with Interface, BlueprintComponents, UserInterface, including drag and drop as well as an action menu for items in different inventory tabs.</p>
+
+<h1>### Stages ###</h1>
+<p>With the goal of the project being used in future ideas, I followed the instructor's advice to keep everything modular, both files and their folders, as well as the code, using functions and components added to my player ("BP_ThirdPersonCharacter"), thus avoiding recurrent use of the "CastTo" node, which optimizes game performance and player experience.</p>
+
+<h2>BPC_Inventory</h2>
+<p>First, I created the initializations of the BlueprintComponent by adding PlayerController's MappingContext to the inventory's InputMappingContext.</p>
+<p>When starting the WidgetBlueprint of the inventory, I used CastToBP_ThirdPersonCharacter to save the Player variable, used BindEventToComponentBeginOverlap in the CapsuleComponent for the collection system of what I called currency.</p>
+<img src="ProjectImages\CurrencyAssets.PNG" alt="CurrencyAssets" width="400" >
+<img src="ProjectImages\CurrencyAdd.PNG" alt="CurrencyAdd" width="400" >
+<p>I included the health bar and currency count in the game's Viewport, and configured the inventory sizes.</p>
+
+<h3>AddToInventory</h3>
+<p>I used EnhancedInputAction IA_Interact configured to the 'E' key to call the Trace Item function, and AddToInventory</p>
+<p>The TraceItemToPickUp function checks actor collision and the implementation of the BPI_Item interface within a radius of 90 units to 50 units in front of the Player and returns success.</p>
+<img src="ProjectImages\BPCAddToInventoryCall.PNG" alt="BPCAddToInventoryCall" width="400" >
+
+<p>With this, the AddToInventory function can be executed</p>
+<p>This function will be executed according to the item type, defined by Enumerators.</p>
+<p>Checking the inventory in a loop, correlating the item name from Trace Item, its StackSize, and correctly adding it to its Array.</p>
+<p>This causes the item to be displayed in the UserInterface when the 'I' key is pressed, calling the UpdateInventoryUI function, and opening the inventory on the screen.</p>
+<img src="ProjectImages\BPCAddToInventory.PNG" alt="BPCAddToInventory" width="400" >
+<img src="ProjectImages\UpdateInventoryUI.PNG" alt="UpdateInventoryUI" width="400" >
+<img src="ProjectImages\ReadmeFirstImage.PNG" alt="InventoryFirstImage" width="400" >
+<img src="ProjectImages\FoodTab.PNG" alt="FoodTab" width="400" >
+<img src="ProjectImages\QuestItemsTab.PNG" alt="QuestItemsTab" width="400" >
+<img src="ProjectImages\ShieldsTab.PNG" alt="ShieldsTab" width="400" >
+<img src="ProjectImages\SwordsTab.PNG" alt="SwordsTab" width="400" >
+
+<h2>Drag and Drop</h2>
+<p>For Drag and Drop, I used Unreal's OnPreviewMouseButtonDown function to detect right mouse button hold (this same function is being used for the item action menu within the slot with the left mouse button).</p>
+<img src="ProjectImages\DragDropDetect.PNG" alt="DragDropDetect" width="400" >
+<p>With DragDetected, the item can be removed from its Array and its variables, in Structure, and its current Index can be passed to the DragAndDropBlueprint.</p>
+<img src="ProjectImages\DragDetect.PNG" alt="DragDetect" width="400" >
+<p>On Drop, I first check if the same item is in that slot, this makes the item return to its old index.</p>
+<p>Another case is an empty slot, or with another item, making it possible for the dropped item to be created in that index, or swap places with the item in the current position.</p>
+<img src="ProjectImages\DropDetect0.PNG" alt="DropDetect" width="400" >
+<p>If the item is dropped anywhere other than the slot, I created a redundancy for it to return to its original index.</p>
+<img src="ProjectImages\DropInNoSlot.PNG" alt="DropInNoSlot" width="400" >
+
+<h2>Action Menu</h2>
+<p>The action button is the first button in the menu, which is created when left-clicking the item in the slot.</p>
+<p>Used to Equip items in the left and right hand of the Player.</p>
+<p>For the food tab, when clicking the action button, the UseEatables function is called to modify the Player's current health.</p>
+<img src="ProjectImages\ActionMenuUseEquip.PNG" alt="ActionMenuUseEquip" width="400" >
+<img src="ProjectImages\ActionMenuEatables.PNG" alt="ActionMenuEatables" width="400" >
+<img src="ProjectImages\ActionMenu.PNG" alt="DropInNoSlot" width="400" >
+
+<p>The cancel button simply closes the menu, but there are redundancies in this system to close when moving the mouse away from the button area.</p>
+<p>The Drop button performs different checks for the type of selected item, used to unequip items when dropped.</p>
+<img src="ProjectImages\ActionMenuDrop.PNG" alt="ActionMenuDrop" width="400" >
+
+<h1>### Conclusion ###</h1>
+<h3>Another project using the structure learned and documented here is in progress, which is why in some images you can see the logic already being applied, introducing a quest mechanic.</h3>
+<p>I am very grateful to the course instructor Mr. Navid, very patient and didactic in his teachings.</p>
+
+
 </body>
