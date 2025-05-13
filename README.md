@@ -1,5 +1,5 @@
 <body>
-
+<h3>vvv  SCROLL DOWN FOR ENGLISH VERSION  vvv</h3>
 <img src="ProjectImages\ReadmeFirstImage.PNG" alt="InventoryViewport" width="800" >
 
 
@@ -62,6 +62,10 @@
 <h1>### Conclusão ###</h1>
 <h3>Um outro projeto usando a estrutura aprendida e documentada aqui esta em andamento, por isso em algumas imagens pode ser visto a logica ja sendo aplicada, introduzindo uma mecanica de quest.</h3>
 <p>Agradeço muito ao instrutor do curso Mr. Navid, muito paciente e didatico em seus ensinamentos.</p>
+
+
+<h3>vvv  ENGLISH VERSION  vvv</h3>
+
 
 
 <h1>_____________________________________________________________</h1>
